@@ -1,0 +1,34 @@
+{
+  "name": "whyis",
+  "version": "1.0.0",
+  "description": "Whyis is a nano-scale knowledge graph publishing, management, and analysis framework.  Whyis aims to support domain-aware management and curation of knowledge from many different sources. Its primary goal is to enable creation of useful domain- and data-driven knowledge graphs. Knowledge can be contributed and managed through direct user interaction, statistical analysis, or data ingestion from many different kinds of data sources. Every contribution to the knowledge graph is managed as a separate entity so that its provenance (publication status, attribution, and justification) is transparent and can be managed and used.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {
+    "angular-mocks": "^1.7.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tetherless-world/whyis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tetherless-world/whyis/issues"
+  },
+  "homepage": "https://github.com/tetherless-world/whyis#readme"
+}

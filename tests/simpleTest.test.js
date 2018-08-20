@@ -26,7 +26,7 @@ describe('Testing the main controller', function(){
         // module('App', ['ngSanitize', 'ngMaterial', 'lfNgMdFileInput', 'ui.bootstrap', 'seco.facetedSearch','jsonLdEditor']);
         // var app = angular.mock.module('App', []);
         var app = angular.module('App', []);       
-        angular.bootstrap(document, ['App']); //manually bootstrap angular, on Dom ready
+        // angular.bootstrap(document, ['App']); //manually bootstrap angular, on Dom ready
         console.log("inside simple test")
 
         inject(function(_$controller_){
