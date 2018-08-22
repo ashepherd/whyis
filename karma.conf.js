@@ -19,6 +19,7 @@ module.exports = function(config) {
       './static/bower_components/angular/angular.min.js',
       './node_modules/angular-mocks/angular-mocks.js',
       './static/bower_components/angular-animate/angular-animate.js',
+      './static/bower_components/angular-material/angular-material.js',
       './tests/*.test.js'
     ],
 

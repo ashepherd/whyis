@@ -12,7 +12,7 @@ describe("A suite", function() {
 
 describe('Testing the main controller', function(){
     var $controller 
-
+    var app;
     // define(['angular'], function(angular){ 
     //     // here angular is just a reference, might not be fully loaded
     //     // Point_1
@@ -25,7 +25,7 @@ describe('Testing the main controller', function(){
         //load app module
         // module('App', ['ngSanitize', 'ngMaterial', 'lfNgMdFileInput', 'ui.bootstrap', 'seco.facetedSearch','jsonLdEditor']);
         // var app = angular.mock.module('App', []);
-        var app = angular.module('App', []);       
+        app = angular.module('App', []);       
         // angular.bootstrap(document, ['App']); //manually bootstrap angular, on Dom ready
         console.log("inside simple test")
 
@@ -41,7 +41,12 @@ describe('Testing the main controller', function(){
     it('$scope.nanopub should be truthy', function(){
         var $scope = {}
 
-        var controller = $controller('NewInstanceController', {$scope: $scope});
+        // var controller = $controller('NewInstanceController', {$scope: $scope});
+        // or
+        var controller = (function(app){
+            $controller('NewInstanceController', {$scope: $scope})
+        })(app);
+
         expect($scope.nanopub).toBeTruthy();
     })
 
